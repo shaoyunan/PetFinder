@@ -1,0 +1,119 @@
+<div class="container" style="width: 100%">
+  <app-nav></app-nav>
+</div>
+
+<div class="container" style="width: 83%; float: left">
+    <div class="row">
+      <div class="col-md-2">
+        <div class="form-group">
+          <p class="text-content2">Type</p>
+          <select class="selectpicker form-control"  (change)="changeSearch('type:' + $event.target.value)">
+            <option value="Any" >Any</option>
+            <option value="Dog" >Dog</option>
+            <option value="Cat" >Cat</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <p class="text-content2">Breed</p>
+          <select class="selectpicker form-control"  (change)="changeSearch('primarybreed:' + $event.target.value)">
+            <option value="Any" >Any</option>
+            <option value="Husky" >Husky</option>
+            <option value="Golden Retriever" >Golden Retriever</option>
+            <option value="Domestic Short Hair" >Domestic Short Hair</option>
+            <option value="Terrier" >Terrier</option>
+            <option value="German Shepherd Dog" >German Shepherd Dog</option>
+            <option value="Boxer" >Boxer</option>
+            <option value="Chow Chow" >Chow Chow</option>
+            <option value="Great Dane" >Great Dane</option>
+            <option value="Dachshund" >Dachshund</option>
+            <option value="Akita" >Akita</option>
+            <option value="Catahoula Leopard Dog" >Catahoula Leopard Dog</option>
+            <option value="Poodle" >Poodle</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <p class="text-content2">Age</p>
+          <select class="selectpicker form-control" (change)="changeSearch('age:' + $event.target.value)">
+            <option value="Any" >Any</option>
+            <option value="Baby" >Baby</option>
+            <option value="Young" >Young</option>
+            <option value="Adult" >Adult</option>
+            <option value="Senior" >Senior</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <p class="text-content2" >Gender</p>
+          <select class="selectpicker form-control" (change)="changeSearch('sex:' + $event.target.value)">
+            <option value="Any" >Any</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <p class="text-content2">Location</p>
+          <select class="selectpicker form-control" (change)="changeSearch('location:' + $event.target.value)">
+            <option value="Any" >Any</option>
+            <option value="Shenandoah" >Boston</option>
+            <option value="Malden" >Malden</option>
+            <option value="Seattle" >Plano</option>
+            <option value="Miami" >Brevard</option>
+            <option value="Washington" >Coppell</option>
+            <option value="Washington" >Oakhurst</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="form-group">
+          <p class="text-content2">Sort by</p>
+          <select class="selectpicker form-control"  (change)="changeSearch('sort:' + $event.target.value)">
+            <option value="Any" >Any</option>
+            <option value="recently_added" >Recently Added</option>
+            <option value="longest_available" >Longest Available</option>
+          </select>
+        </div>
+      </div>
+</div>
+</div>
+
+<div class="row" >
+  <div class="col-md-2" >
+    <p class="text-content2">Search More</p>
+    <div class="input-group" >
+      <input type="text" class="form-control" placeholder="Search for..." [(ngModel)]="searchKeyWord">
+      <span class="input-group-btn">
+       <button class="btn btn-default" type="button" (click)="searchByKeyword()">Go!</button>
+      </span>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="row">
+  <div class="col-md-3"  *ngFor="let pet of petList">
+    <div class="thumbnail">
+      <a (click)="setPetId(pet)" [routerLink]="['/search/pet',pet._id]">
+        <img src="{{ pet.imagelink[0] }}" alt="pet" style="height: 200px; width: 100%; overflow: hidden;">
+        <div class="pet-card-text">
+          <p class="pet-card-title">{{ pet.name.split('-')[0].split('*')[0] }}</p>
+          <p class="pet-card-content">{{ pet.type }} - {{ pet.primarybreed }}</p>
+          <p class="pet-card-content">{{ pet.age }} - {{ pet.sex }}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+

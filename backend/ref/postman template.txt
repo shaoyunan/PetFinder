@@ -1,0 +1,12 @@
+Post
+Headers:
+Key			Value
+
+content-type		application/json
+
+--------------------------------------------------------------
+Body->raw->JSON
+
+{
+	JSON ATTRIBUTES
+}

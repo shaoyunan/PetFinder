@@ -1,0 +1,21 @@
+<div class="container" style="width: 100%">
+  <app-nav></app-nav>
+</div>
+<div style="margin-left: 30%; width: 30%;">
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" [(ngModel)]="user.email" name="email">
+    </div>
+    <div class="form-group" style="margin-bottom: 10%">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" [(ngModel)]="user.password" name="password">
+    </div>
+
+    <p style="color: red;"> {{ msg }}</p>
+    <button type="submit" class="btn btn-default" (click)="loginAsAdopter()">Login as adopter</button>
+    <button type="submit" class="btn btn-default" (click)="loginAsOwner()">Login as owner</button>
+    <button type="submit" class="btn btn-default" [routerLink]="['/user/register']">Register</button>
+
+  </form>
+</div>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+ <div class="container" style="width: 100%">
+  <app-nav></app-nav>
+</div>
+  <title>Pet Carousel</title>
+
+<div style="margin-bottom:10px">
+  <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+     <!-- Indicators  -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" *ngFor="let im of pet.imagelink;let i = index" [attr.data-slide-to]="i" ngClass="i == 0 ? 'active' : ''"></li>
+
+      <!-- Wrapper for slides  -->
+    </ol>
+    <div class="carousel-inner">
+        <div *ngFor="let im of pet.imagelink; let k = index" [ngClass]="k == 0 ? 'item active' : 'item'">
+            <img src={{im}} alt="Event Image"  style="width:80%;height:500px">
+        </div>
+    </div>
+
+    <!-- Left and right controls  -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+
+<!--******************* Pet Detail **********************-->
+<div class="panel panel-default" id="pet-card">
+  <div class="panel-body">
+    <div class="petcard">
+      <span style="width: 20%; font-size: 36px">{{pet.name}}</span>
+      <button type="button" class="btn btn-default btn-sm" (click)="setBookmark()" style="margin-left: 20px">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Bookmark
+      </button>
+    </div>
+    <div  class="petcard">
+      <p><b>Type:</b>{{pet.type}}</p>
+      <p><b>Breed:</b>{{pet.primarybreed}}</p>
+      <p><b>Age:</b>{{pet.age}}</p>
+      <p><b>Gender:</b>{{pet.sex}}</p>
+      <button type="button" class="btn btn-default btn-sm" (click) = "LocatePet(googleMapModal);map.triggerResize()">
+          <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Locate Me On Map
+      </button>
+    </div>
+
+    <div>
+      <h3>Meet {{pet.name}}</h3>
+      <div id="description" >{{pet.description}}</div>
+    </div>
+  </div>
+</div>
+
+<!-- ***************** Contact **********************-->
+<div style="margin-top:20px">
+    <span>
+        <button id=button type="button" class="btn btn-lg btn-block" [ngClass]="{'active ':!addEnabled,'disabled':addEnabled}"
+          (click)="toggleAdd()">
+         ASK ABOUT
+        </button>
+      </span>
+
+      <div *ngIf="addEnabled" class="panel panel-default" id="contact-card">
+        <div *ngIf="isLoggedIn">          
+          <app-contact-card class="panel-body"></app-contact-card>
+        </div>
+        <div *ngIf="!isLoggedIn"  class="panel-body" style="text-align: center">          
+           <p style="font-size:28px"><b>You Have to Sign In First!</b></p> 
+           <a href="#" [routerLink]="['/user/login']"  style="font-size:25px">Sign In/Register</a>
+          </div>
+      </div>
+</div>
+
+<!--
+<div id="overlay" >
+  fffff
+</div> -->
+<!--********************** GoogleMap Modal *********************************-->
+<div >
+    <modal #googleMapModal >
+      <modal-header>
+      </modal-header>
+      <modal-content>
+  {{location}} 
+   <agm-map #map [latitude]="lat" [longitude]="lng" [zoom]="11">
+    <agm-marker [latitude]="lat" [longitude]="lng" ></agm-marker>
+  </agm-map>
+    </modal-content>
+    <modal-footer>
+      <button class="btn btn-default" (click)="googleMapModal.close()">Close</button>
+    </modal-footer>
+    </modal>
+    </div>
+
+
+
+
+

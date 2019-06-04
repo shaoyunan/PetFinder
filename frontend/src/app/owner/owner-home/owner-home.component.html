@@ -1,0 +1,30 @@
+<div class="container" style="width: 100%">
+  <app-nav></app-nav>
+</div>
+<div class='container' style="width: 100%">
+  <div class="text-heading1">
+    My Pet Home
+    <hr>
+  </div>
+
+  <div id='content' class='row-fluid'>
+
+    <div class='span2 sidebar col-xs-2'>
+      <ul class="nav nav-tabs nav-stacked">
+        <li (click)="tag='profile'"><a style="color: black">About Me</a></li>
+        <li (click)="tag='message'"><a style="color: black">Message Box</a></li>
+        <li (click)="tag='petList'"><a style="color: black">Pet List</a></li>
+        <li (click)="tag='bookmark'"><a style="color: black">Bookmarks</a></li>
+      </ul>
+    </div>
+
+    <div class='span8 main col-xs-8' >
+      <app-adopter-profile *ngIf="tag=='profile'"></app-adopter-profile>
+      <app-message-list *ngIf="tag=='message'"></app-message-list>
+      <app-owner-pet-list *ngIf="tag=='petList'"></app-owner-pet-list>
+      <app-bookmark-list *ngIf="tag=='bookmark'"></app-bookmark-list>
+      </div>
+
+  </div>
+</div>
+

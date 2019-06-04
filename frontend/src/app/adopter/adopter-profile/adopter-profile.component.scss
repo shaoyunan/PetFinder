@@ -1,0 +1,29 @@
+#bookmark {
+    float: right; 
+    margin-right: 2%;
+  }
+
+  #bookmark:hover{
+   color:white;
+  }
+
+ hr {
+     display: block;
+     height: 1px;
+     border: 0;
+     border-top: 1px solid #ccc;
+     margin: 1em 0;
+     padding: 0;
+ }
+
+ #save{
+    color:grey;
+    background-color: black;
+    font-size:1em;
+    widows: 100%;
+    margin:auto;
+  }
+
+  #save:hover{
+    color:white;
+  }

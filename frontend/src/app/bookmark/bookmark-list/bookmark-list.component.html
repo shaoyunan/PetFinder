@@ -1,0 +1,87 @@
+
+<div class="row">
+  <h2>Pet</h2>
+  <hr>
+  <div   *ngFor="let pet of petList">
+    <div class="thumbnail col-md-3" >
+      <a [routerLink]="['/search/pet',pet._id]">
+        <img src="{{ pet.imagelink[0] }}" alt="pet" style="height: 200px; width: 100%; overflow: hidden;">
+      </a>
+      <div style="height: 50px">
+      <b style="float: left; margin-left: 10%; margin-top: 5%;">{{ pet.name.split('-')[0].split('*')[0] }}</b>
+      <a  class="btn btn-info btn-sm"
+          style="float: right; margin-right: 10%; margin-top: 5%;"
+          (click)="deleteBookmark(bookmark,deleteBookmarkModal)">
+        <span class="glyphicon glyphicon-trash"></span> Delete
+      </a>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="row">
+  <h2>Article</h2>
+  <hr>
+  <div   *ngFor="let bookmark of bookmarks">
+    <div class="thumbnail col-md-3" *ngIf="checkTag(bookmark, 'article')">
+      <a href="{{bookmark.url}}">
+        <img src="http://www.digitalmeetsculture.net/wp-content/uploads/2015/04/article.jpg" alt="pet" style="height: 200px; width: 100%; overflow: hidden;">
+      </a>
+      <div style="height: 50px">
+        <b style="float: left; margin-left: 10%; margin-top: 5%;">Article</b>
+        <a  class="btn btn-info btn-sm"
+            style="float: right; margin-right: 10%; margin-top: 5%;"
+            (click)="deleteBookmark(bookmark,deleteBookmarkModal)">
+          <span class="glyphicon glyphicon-trash"></span> Delete
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <h2>Profile</h2>
+  <hr>
+
+  <div *ngFor="let bookmark of bookmarks">
+    <div class="thumbnail col-md-3" *ngIf="checkTag(bookmark, 'profile')" (click)="load();">
+      
+      <!-- <a href="{{bookmark.url}}"> -->
+
+        <img src="https://www.profilegroup.co.nz/wp-content/uploads/2015/12/au.png" alt="pet" style="height: 200px; width: 100%; overflow: hidden;">
+      <!-- </a> -->
+      <div style="height: 50px">
+        <b style="float: left; margin-left: 10%; margin-top: 5%;">Profile</b>
+        <a  class="btn btn-info btn-sm"
+            style="float: right; margin-right: 10%; margin-top: 5%;"
+            (click)="deleteBookmark(bookmark,deleteBookmarkModal)">
+          <span class="glyphicon glyphicon-trash"></span> Delete
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+        <modal #deleteBookmarkModal>
+          <modal-header>
+            <h1>Delete Bookmark</h1>
+          </modal-header>
+
+          <modal-content class="row">
+            <div *ngIf="modalError" class="row alert alert-danger">
+              Could not Delete
+            </div>
+            Are you sure ?
+          </modal-content>
+          <modal-footer>
+            <button class="btn btn-default" (click)="onDelete()">Delete</button>
+            <button class="btn btn-default" (click)="deleteBookmarkModal.close()">Cancel</button>
+          </modal-footer>
+        </modal>
+</div>
+
+

@@ -1,0 +1,27 @@
+<div class="container" style="width: 100%">
+  <app-nav></app-nav>
+</div>
+<div style="margin-left: 30%; width: 30%;">
+    <form>
+      <div class="form-group">
+        <label>Email:</label>
+        <input type="email" class="form-control" [(ngModel)]="user.email" name="email">
+      </div>
+
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" [(ngModel)]="user.password" name="password">
+      </div>
+
+      <div class="form-group">
+        <label>Register as:</label>
+        <select name="role" (change)="selectRole($event.target.value)">
+          <option value="adopter">Adopter</option>
+          <option value="owner">Owner</option>
+        </select>
+      </div>
+
+      <p style="color: red;"> {{ msg }}</p>
+<button type="submit" class="btn btn-default" (click)="registerUser()">Register</button>
+</form>
+</div>

@@ -1,0 +1,214 @@
+<div>
+  <!-- <a [routerLink]="['/owner/post-pet']" style="color: white"> -->
+    <button class="owner-btn btn btn-primary btn-lg" (click)="addPet(addPetModal)">Add a pet</button>
+  <!-- </a> -->
+</div>
+
+<div class="row">
+  <div class="col-md-3"  *ngFor="let pet of petList">
+    <div class="thumbnail">
+      <div (click)="setPetIdOwner(pet)" [routerLink]="['/search/pet',pet._id]">
+        <img src="{{ pet.imagelink && pet.imagelink[0] }}" alt="pet" style="height: 200px; width: 100%; overflow: hidden;">
+        <div class="pet-card-text">
+          <p class="pet-card-title">{{ pet.name }}</p>
+        </div>
+      </div>
+
+      <div style="height: 50px">
+        <a  class="btn btn-info btn-sm"
+            style="float: left; margin-left: 5%; margin-top: 5%;"
+            (click)="editPet(pet,editPetModal)">
+          <span class="glyphicon glyphicon-trash" ></span> Edit
+        </a>
+        <a  class="btn btn-info btn-sm"
+            style="float: right; margin-right: 10%; margin-top: 5%;"
+            (click)="deletePet(pet,deletePetModal)">
+          <span class="glyphicon glyphicon-trash"></span> Delete
+        </a>
+      </div>
+
+        <!--<button type="button" class="btn btn-warning fa fa-edit" (click)="editPet(pet,editPetModal)">Edit</button>-->
+        <!--<button type="button" class="btn btn-danger fa fa-edit" (click)="deletePet(pet,deletePetModal)">Delete</button>-->
+    </div>
+  </div>
+</div>
+
+<!--********************** Add Pet Modal *********************************-->
+<div class="row">
+  <modal #addPetModal>
+    <modal-header>
+      <h1>Add Pet</h1>
+    </modal-header>
+    <modal-content class="row">
+<form ngForm #addPetForm="ngForm" (ngSubmit)="onSubmit(addPetModal,addPetForm)">
+    <div class="form-group">
+        <p class="text-content2">Name</p>
+        <input type="text" placeholder="Name" class="form-control" ngModel name="pet.name" name="name" #name="ngModel">
+    </div>
+    <div class="form-group">
+      <label class="control-label">Type</label>
+      <select class="selectpicker form-control"  name="type" ngModel name="type" #type="ngModel">
+          <option value="" selected="selected">Choose Type</option>
+        <option [value]="'Dog'">Dog</option>
+        <option [value]="'Cat'">Cat</option>
+      </select>
+    </div>
+  <div class="form-group">
+      <label class="control-label">Breed</label>
+      <select class="selectpicker form-control"  name="primarybreed" ngModel name="primarybreed" #primarybreed="ngModel">
+        <option value="" selected="selected">Choose Breed</option>
+        <option [value]="'Husky'" >Husky</option>
+        <option [value]="'Golden Retriever'" >Golden Retriever</option>
+        <option [value]="'Domestic Short Hair'" >Domestic Short Hair</option>
+        <option [value]="'Terrier'" >Terrier</option>
+        <option [value]="'German Shepherd Dog'" >German Shepherd Dog</option>
+        <option [value]="'Boxer'" >Boxer</option>
+        <option [value]="'Chow Chow'" >Chow Chow</option>
+        <option [value]="'Great Dane'" >Great Dane</option>
+        <option [value]="'Dachshund'" >Dachshund</option>
+        <option [value]="'Akita'" >Akita</option>
+        <option [value]="'Catahoula Leopard Dog'" >Catahoula Leopard Dog</option>
+        <option [value]="'Poodle'" >Poodle</option>
+      </select>
+    </div>
+  <div class="form-group">
+    <label class="control-label">Age</label>
+    <select class="selectpicker form-control" name="age" ngModel name="age" #age="ngModel">
+      <option value="" selected="selected">Choose Age</option>
+      <option [value]="'Puppy'">Puppy</option>
+      <option [value]="'Young'">Young</option>
+      <option [value]="'Adult'">Adult</option>
+      <option [value]="'Senior'">Senior</option>
+    </select>
+  </div>
+  <div class="form-group">
+      <label class="control-label">Gender</label>
+      <select class="selectpicker form-control" name="sex" ngModel name="sex" #sex="ngModel">
+        <option value="" selected="selected">Choose Gender</option>
+        <option [value]="'Female'">Female</option>
+        <option [value]="'Male'">Male</option>
+      </select>
+    </div>
+    <div class="form-group input-group" style="width: 100%">
+        <label class="control-label">Description</label>
+          <textarea class="form-control" name="description" placeholder="Introduce Your Pet Here..." ngModel name="description" #description="ngModel">Enter text here...</textarea>
+    </div>
+
+  <div class="form-group">
+      <label class="control-label">Upload Image</label>
+      <label class="custom-file">
+          <input type='file' (change)="onSelectFile($event)" name="image" ngModel name="image" #image="ngModel">
+          <img [src]="url" height="200" *ngIf="edited">
+        <span class="custom-file-control"></span>
+      </label>
+  </div>
+  <div>
+      <button type="submit" class="btn btn-default">Submit</button>
+      <button class="btn btn-default" (click)="addPetModal.close()">Cancel</button>
+  </div>
+</form>
+</modal-content>
+<modal-footer>
+<!-- <button class="btn btn-primary" [disabled]="CreatorEditForm.invalid" (click)="onEdit();addPetModal.close()">Save</button> -->
+</modal-footer>
+</modal>
+</div>
+
+<!--********************** Edit Pet Modal *********************************-->
+<div class="row">
+  <modal #editPetModal>
+    <modal-header>
+      <h1>Edit Pet</h1>
+    </modal-header>
+    <modal-content class="row">
+
+  <form ngForm #editPetForm="ngForm" (ngSubmit)="onSubmit(addPetModal,addPetForm)">
+      <div class="form-group">
+          <p class="text-content2">Name</p>
+          <input type="text" placeholder="Name" class="form-control" id="pname" [(ngModel)]="pet.name" name="name" value={{pet.name}}>
+      </div>
+    <div class="form-group">
+      <label class="control-label">Type</label>
+      <select class="selectpicker form-control"  name="type" [(ngModel)]="pet.type">
+          <option [value]="pet.type" selected="selected">Current:{{pet.type}}</option>
+        <option [value]="'Dog'">Dog</option>
+        <option [value]="'Cat'">Cat</option>
+      </select>
+    </div>
+
+  <div class="form-group">
+      <label class="control-label">Breed</label>
+      <select class="selectpicker form-control"  name="primarybreed" [(ngModel)]="pet.primarybreed">
+        <option [ngValue]="pet.primarybreed" selected="selected">Current:{{pet.primarybreed}}</option>
+        <option [value]="'Husky'">Husky</option>
+        <option [value]="'Jindo'">Jindo</option>
+        <option [value]="'Corgi'">Corgi</option>
+      </select>
+    </div>
+
+  <div class="form-group">
+    <label class="control-label">Age</label>
+    <select class="selectpicker form-control"  name="age" [(ngModel)]="pet.age">
+      <option [value]="pet.age" selected="selected">Current:{{pet.age}}</option>
+      <option [value]="'Puppy'">Puppy</option>
+      <option [value]="'Young'">Young</option>
+      <option [value]="'Adult'">Adult</option>
+      <option [value]="'Senior'">Senior</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+      <label class="control-label">Gender</label>
+      <select class="selectpicker form-control" name="sex" [(ngModel)]="pet.sex">
+        <option [value]="pet.sex" selected="selected">Current:{{pet.sex}}</option>
+        <option [value]="'Female'">Female</option>
+        <option [value]="'Male'">Male</option>
+      </select>
+    </div>
+
+    <div class="form-group input-group" style="width: 100%">
+        <label class="control-label">Description</label>
+          <textarea class="form-control" name="description" placeholder="Introduce Your Pet Here..." [(ngModel)]="pet.description">{{pet.description}}</textarea>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Upload Image</label>
+        <label class="custom-file">
+            <!-- <select class="selectpicker form-control"  name="breed" [(ngModel)]="pet.breed">
+                <option [value]="pet.breed" selected="selected">Current:{{pet.primarybreed}}</option> -->
+            <input type='file' (change)="onSelectFile($event)" name="image" ngModel name="image" #image="ngModel">
+            <img [src]="url" height="200" *ngIf="edited">
+            <img src="{{ pet.imagelink && pet.imagelink[0] }}" height="200"*ngIf="!edited">
+          <span class="custom-file-control"></span>
+        </label>
+    </div>
+  <div>
+    </div>
+  </form>
+  </modal-content>
+  <modal-footer>
+      <button class="btn btn-default" (click)="onEdit();editPetModal.close()">Submit</button>
+    <button class="btn btn-default" (click)="editPetModal.close()">Cancel</button>
+  </modal-footer>
+  </modal>
+  </div>
+
+
+<!--********************** Delete Pet Modal *********************************-->
+<div class="row">
+  <modal #deletePetModal>
+    <modal-header>
+      <h1>Delete Pet</h1>
+    </modal-header>
+    <modal-content class="row">
+      <div *ngIf="modalError" class="row alert alert-danger">
+        Could not Delete
+      </div>
+      Are you sure ?
+    </modal-content>
+    <modal-footer>
+      <button class="btn btn-default" (click)="onDelete()">Delete</button>
+      <button class="btn btn-default" (click)="deletePetModal.close()">Cancel</button>
+    </modal-footer>
+  </modal>
+</div>

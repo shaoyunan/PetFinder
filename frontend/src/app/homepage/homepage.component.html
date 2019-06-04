@@ -1,0 +1,20 @@
+<div class="container" style="width: 100%">
+  <app-nav></app-nav>
+</div>
+<app-community-section></app-community-section>
+
+<br>
+<div class="row" style="width: 100%; height: 120px; ">
+  <div class="col-md-8 " style="margin-left: 15%; margin-top: 3%;" >
+    <div class="input-group input-group-lg" >
+      <input type="text" class="form-control" placeholder="Search for..." [(ngModel)]="keyword">
+      <span class="input-group-btn">
+       <button class="btn btn-default" type="button" [routerLink]="['/search']" (click)="searchChange()">Go!</button>
+      </span>
+    </div>
+  </div>
+
+</div>
+
+<app-pet-section></app-pet-section>
+

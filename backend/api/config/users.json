@@ -1,0 +1,902 @@
+{ 
+    "_id" : ObjectId("5ad50f7546c2a9597d48dd2e"), 
+    "email" : "a@a.com", 
+    "password" : "$2y$10$c5s14kUttKVsjnhaqcGC4eQtuhq4lvsrqSkMjjczF.zre8D/rRtNW", 
+    "isowner" : true, 
+    "isadopter" : false, 
+    "lastname" : "jack", 
+    "firstname" : "tom", 
+    "gender" : "male", 
+    "contact" : {
+        "phone" : "23232", 
+        "state" : "MA", 
+        "address1" : "90 maple street", 
+        "address2" : "", 
+        "email" : "s.h@i.com", 
+        "city" : "malden", 
+        "zip" : "02148"
+    }, 
+    "sentmessage" : [
+        {
+            "_id" : ObjectId("5ad50f7526c2a9597d47dd2e"), 
+            "messagecontent" : "eheh", 
+            "userto" : "b@b.com", 
+            "posttime" : "2018-04-18T01:03:18.597Z"
+        }
+    ], 
+    "receivemessage" : [
+        {
+            "_id" : ObjectId("5ad50f6526a2a8597d45dd2e"), 
+            "messagecontent" : "hello", 
+            "userfrom" : "b@b.com", 
+            "posttime" : "2018-04-19T01:03:18.597Z"
+        }
+    ], 
+    "bookmarklist" : [
+        {
+            "_id" : ObjectId("4ad50f6526a2a8597d45dd3e"), 
+            "tag" : "", 
+            "url" : ""
+        }
+    ], 
+    "petlist" : [
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd2d"), 
+            "name" : "Sheila", 
+            "type" : "Dog", 
+            "primarybreed" : "Husky", 
+            "sex" : "F", 
+            "age" : "Adult", 
+            "description" : "Sheila is a fun-loving high energy girl.  She is looking for an active family, preferably with a fenced in yard.  She is waiting for a family to call her own,", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/38449758/1/?bust=1497484439&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/38449758/1/?bust=1497484439&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/38449758/2/?bust=1508963793&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/38449758/2/?bust=1508963793&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/38449758/3/?bust=1508963794&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/38449758/3/?bust=1508963794&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-04-15T01:03:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd2f"), 
+            "name" : "Sampson", 
+            "type" : "Dog", 
+            "primarybreed" : "Golden Retriever", 
+            "sex" : "M", 
+            "age" : "Baby", 
+            "description" : "One of Kimmy's puppies\n\nSampson gets along well with others.  He is a little shy around strangers but just needs a few days to warm up to you.\n\n\nClick here to complete the adoption questionnaire (link at the top of the page) and email it to: kim@dogsrus.orgVisit our Website for more information about our shelter, adoption policies, and procedures.\n ", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/29682223/1/?bust=1495847928&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/29682223/1/?bust=1495847928&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-15T01:03:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd31"), 
+            "name" : "Scat", 
+            "type" : "Cat", 
+            "primarybreed" : "Domestic Short Hair", 
+            "sex" : "F", 
+            "age" : "Adult", 
+            "description" : "Scat is a scardy cat. She was born in the spring of 2010 and is one of Miss Gulch's kittens. She is feral and she has stuck pretty close to her. With some work and time she can be handleable. We've gotten her better than she was, but still a long way to go.\n\nPlease call if you want more information on her.\n\nShe has been tested, spayed, fully vaccinated, wormed and flea treated. \n\nHer adoption fee is $75 and a veterinary reference is required.", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/17293958/2/?bust=1423414237&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/17293958/2/?bust=1423414237&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-04-13T01:03:18.597Z"
+        }
+    ]
+}
+{ 
+    "_id" : ObjectId("5ae5067546c2a9587d48dd2e"), 
+    "email" : "b@b.com", 
+    "password" : "$2y$10$L7pV8Hv11oJG/UdGC6TVpeTDHxDmLYFi6BrAxR8rBePMPoynpH8gS", 
+    "isowner" : true, 
+    "isadopter" : false, 
+    "lastname" : "tck", 
+    "firstname" : "jom", 
+    "gender" : "female", 
+    "contact" : {
+        "phone" : "(972) 769-4360", 
+        "state" : "TX", 
+        "address1" : "4028 Plano Parkway", 
+        "address2" : "", 
+        "email" : "debbien@plano.gov", 
+        "city" : "Plano", 
+        "zip" : "75093"
+    }, 
+    "sentmessage" : [
+
+    ], 
+    "receivemessage" : [
+        {
+            "_id" : ObjectId("5ad50f6426b2a8597d45dd2e"), 
+            "messagecontent" : "hello", 
+            "userfrom" : "a@a.com", 
+            "posttime" : "2018-04-19T01:03:18.597Z"
+        }
+    ], 
+    "bookmarklist" : [
+        {
+            "_id" : ObjectId("4a350f652642a8597d45dd3e"), 
+            "tag" : "", 
+            "url" : ""
+        }
+    ], 
+    "petlist" : [
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd32"), 
+            "name" : "Rosa* A148237", 
+            "type" : "Dog", 
+            "primarybreed" : "German Shepherd Dog", 
+            "sex" : "F", 
+            "age" : "Young", 
+            "description" : "VIP: Rosa is a sweet dog who is very playful. She is so smart too and knows how to sit.  Rosa is very affectionate and loves to go for walks. She is about 18 months of age and will make a great companion for anyone. \nAdopted animals are not able to go to their new home until spay and neuter surgery has been done. When calling or emailing about an animal, please be sure to use the animal identification number that starts with A.", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41106510/1/?bust=1520880094&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41106510/1/?bust=1520880094&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41106510/2/?bust=1520880095&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41106510/2/?bust=1520880095&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41106510/3/?bust=1520880095&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41106510/3/?bust=1520880095&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41106510/4/?bust=1520880095&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41106510/4/?bust=1520880095&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-04-13T01:02:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd33"), 
+            "name" : "Reba", 
+            "type" : "Dog", 
+            "primarybreed" : "Boxer", 
+            "sex" : "F", 
+            "age" : "Baby", 
+            "description" : "VIP: Reba is a sweet dog who is very playful. She is so smart too and knows how to sit.  Rosa is very affectionate and loves to go for walks. She is about 18 months of age and will make a great companion for anyone. \nAdopted animals are not able to go to their new home until spay and neuter surgery has been done. When calling or emailing about an animal, please be sure to use the animal identification number that starts with A.", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/40550285/1/?bust=1514685873&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/40550285/1/?bust=1514685873&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-13T01:02:18.597Z"
+        }
+    ]
+}
+{ 
+    "_id" : ObjectId("5ad50f7546c2a9597d48dd34"), 
+    "email" : "c@c.com", 
+    "password" : "$2y$10$BSClbMokp9qMSwrh5ZMLTeyy8o.I2eSrhC6r11SfqJe1zJLBUCJHq", 
+    "isowner" : true, 
+    "isadopter" : false, 
+    "lastname" : "dean", 
+    "firstname" : "sam", 
+    "gender" : "male", 
+    "contact" : {
+        "phone" : "828 883-3713", 
+        "state" : "NC", 
+        "address1" : "1124 Old Rosman Hwy", 
+        "address2" : "", 
+        "email" : "malmin@citcom.net", 
+        "city" : "Brevard", 
+        "zip" : "28712"
+    }, 
+    "sentmessage" : [
+
+    ], 
+    "receivemessage" : [
+
+    ], 
+    "bookmarklist" : [
+
+    ], 
+    "petlist" : [
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd35"), 
+            "name" : "BISCUIT", 
+            "type" : "Dog", 
+            "primarybreed" : "Terrier", 
+            "sex" : "F", 
+            "age" : "Young", 
+            "description" : "Hi!  My name is Biscuit and I am a spayed female terrier mix.  The shelter thinks I am about 2 years old.  I was very frightened when my foster mommy brought me home.  I wouldn't even let her pick me up.  Now I am a happy, playful and very smart little girl.  I am fully crate trained and sleep all night without a peep!  I travel well, and do great on a leash.  I love to go on long walks with my foster mom.  I do well with other small dogs and older children.  I am fully potty trained, and let my mom know when I need to go out.  I love to sit on a lap, but I sleep mostly on my little dog mat on the floor.  I love treats, and learn quickly.", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41193009/1/?bust=1521211103&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41193009/1/?bust=1521211103&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-02-13T01:03:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd36"), 
+            "name" : "Jake", 
+            "type" : "Dog", 
+            "primarybreed" : "Chow Chow", 
+            "sex" : "M", 
+            "age" : "Senior", 
+            "description" : "Jake is a mellow, friendly soul who just needs a comfortable place to call home. Jake gets along well with all other dogs, cats, adults and older, respectful children. He is very good on leash and enjoys a nice walk daily. If you need a big teddy bear in your life, Jake is your guy. He said to add that he also likes treats and cuddles.\n\nJake is 10 years old, 50 pounds, and ready for his forever home! 4/11/18 12:26 AM", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41367388/1/?bust=1523338666&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41367388/1/?bust=1523338666&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41367388/2/?bust=1523338667&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41367388/2/?bust=1523338667&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41367388/3/?bust=1523338667&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41367388/3/?bust=1523338667&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-02-13T02:03:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd37"), 
+            "name" : "Cora", 
+            "type" : "Dog", 
+            "primarybreed" : "Boxer", 
+            "sex" : "F", 
+            "age" : "Adult", 
+            "description" : "**Cora is currently being fostered in Houston, TX. Cora's local adoption fee, with local area pick up, is $300. Because foster and vet care are so expensive, the adoption fee is non-negotiable.**\n\nOur beautiful Cora came off the streets of Houston in really poor condition â\u0080\u0093 in fact, when we rescued her we thought the only thing we could do for her was peacefully let her go with some love and dignity. Much to our delight, our vet told us that everything wrong was superficial and we would be able to save her! After getting her healthy and up to weight, we are so excited to find her forever family for her! \n\nCora is a roughly 3-year old, 80-pound Boxer/American Bulldog mix. Because many apartment/condo management companies have restrictions against her breed, it is best to check about potential breed regulations prior to applying. Cora is an medium level activity and SMART girl who will be best suited in a family that can commit to proper exercise and socialization. She is amazing, but to be her best, she needs exercise and stimulation. \n\nCora currently lives with other dogs and LOVES having a playmates. Since she is a bigger girl, we would advocate she not live with small dogs just because of her size, she may inadvertently hurt a small companion. She has a high prey drive â\u0080\u0093 from her time surviving on the streets â\u0080\u0093 so she CANNOT live with cats. She would be great as a single dog or as an addition to a family with another active dog. \n\nCora has a great disposition and would be a great addition to a family with children who know how to be kind and respectful of animals. But with her size, we would advocate she be placed in a home with older children. \n\nCora is house and kennel trained and has done a great job of learning how to walk on her leash. She loves going on adventures with her foster family and is a great co-pilot in the car.  \n\nCoraâ\u0080\u0099s ideal family will understand that she will take time and patience as she acclimates into her new life. She may have accidents, chew on things she is not supposed to, and bark in her kennel. It can take dogs a few weeks to properly acclimate to their new lives, so she is seeking a family that can give her this time and work with her on becoming an even more awesome dog than she already is. \n\nCora should be adopted by a family who plans to keep her indoors as part of a family - we do not adopt dogs into situations in which they will be left outside for extended periods of time unattended (for example, the entire work day).\n\nCora is fully vetted (spayed, microchipped, vaccinated)  and has no known allergies. Unfortunately because of Coraâ\u0080\u0099s time on the street, she is heartworm positive. She has been started on a slow-kill heartworm protocol and the medication to continue her treatment will be provided by the rescue. This does not impact the quality of her life, itâ\u0080\u0099s just something that needs consistency of medication until itâ\u0080\u0099s cleared up. \n\nThe first step in our adoption process is to fill out an application via our website which you can access via the following link: https://reggiesfriends.org/adoptables/\n\nIf you have questions about Cora, please email us at adoptions@reggiesfriends.org for more information.", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/40669370/1/?bust=1515957165&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/40669370/1/?bust=1515957165&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/40669370/2/?bust=1515957170&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/40669370/2/?bust=1515957170&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/40669370/3/?bust=1515957171&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/40669370/3/?bust=1515957171&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-02-13T03:03:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd38"), 
+            "name" : "Max", 
+            "type" : "Dog", 
+            "primarybreed" : "Great Dane", 
+            "sex" : "M", 
+            "age" : "Young", 
+            "contact" : {
+                "phone" : "(620) 221-1698", 
+                "state" : "KS", 
+                "address1" : "7648 222nd Rd", 
+                "address2" : "", 
+                "email" : "ccasdirector@skyerock.net", 
+                "city" : "Winfield", 
+                "zip" : "67156", 
+                "fax" : ""
+            }, 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41102206/1/?bust=1520203031&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41102206/1/?bust=1520203031&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-02-13T03:03:48.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd39"), 
+            "name" : "Sally", 
+            "type" : "Dog", 
+            "primarybreed" : "Dachshund", 
+            "sex" : "F", 
+            "age" : "Adult", 
+            "description" : "You can fill out an adoption application online on our official website.Sally is my pally!! She is an adorable chi-weenie who is as tiny and dainty as a daisy in an open field. She loves kids, cats, other dogs, chickens, and anyone who will give her some love. She loves being played guitar and being sung to sleep. She has cute puppy dreams and cuddles like a newborn child on a cold night. She loves to play outside when yard work is getting done, but when its time to go in, shes ready for a lap to lay on! 4/6/18 12:20 AM", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41339838/1/?bust=1523018123&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41339838/1/?bust=1523018123&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-13T03:03:23.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd3a"), 
+            "name" : "Bagel", 
+            "type" : "Dog", 
+            "primarybreed" : "Akita", 
+            "sex" : "M", 
+            "age" : "Adult", 
+            "description" : "Bagel is a gorgeous big boy, labelled as an Akita/GSD mix by the shelter he was rescued from - we tested his DNA, and results stated he is (in order of strength of the results) Akita, Jindo, Shar Pei.\nHe's about 10 years old, and weighs around 82lbs.\n\nBagel is a friendly, playful boy, who appears to get along with everyone, and other dogs too. As yet we have not tested him with children or small critters.\n\n(The third picture shows Bagel on the right with his Jindo foster brother).\n\nHe is learning to walk nicely on a leash, and his basic commands.\nHe's already had his teeth cleaned and a successful check up at the vet - he does not, however, enjoy the vet visits a whole lot, though he has improved a lot...!\n\nContact us to find out more about him!\nAdoption fees are $250.00.\nVisit our website to complete an application form: www.twodogfarms.com.\n\ninfo@twodogfarms.com", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/34146156/1/?bust=1452342095&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/34146156/1/?bust=1452342095&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/34146156/2/?bust=1451738092&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/34146156/2/?bust=1451738092&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/34146156/3/?bust=1452189296&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/34146156/3/?bust=1452189296&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-01-13T03:03:23.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd3b"), 
+            "name" : "IRISH", 
+            "type" : "Dog", 
+            "primarybreed" : "Catahoula Leopard Dog", 
+            "sex" : "M", 
+            "age" : "Adult", 
+            "description" : "If you are looing for an active dog to add to your family, then Irish is the one for you!  This happy go lucky guy loves to run and play and would enjoy a new forever home with a large yard that he could call his own.  He has gorgeous catahoula markings and one blue eye that will draw you to him.  Please give Irish the second chance that he deserves!  **WE RECOMMEND THAT IF ANY POTENTIAL ADOPTER HAS OTHER DOGS OR CATS, TO PLEASE  BRING THEM IN FOR A MEET AND GREET BEFORE ADOPTING A SHELTER PET....", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41239086/1/?bust=1521780413&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41239086/1/?bust=1521780413&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-01-23T03:03:23.597Z"
+        }
+    ]
+}
+{ 
+    "_id" : ObjectId("5ad50f7546c2a9597d48dd3d"), 
+    "email" : "d@d.com", 
+    "password" : "$2y$10$AhBktg1.Cq0.BCtJftUpduFljbJQxKYyg.GZKP8DW5xxEiEIJfI4q", 
+    "isowner" : false, 
+    "isadopter" : true, 
+    "lastname" : "cas", 
+    "firstname" : "diao", 
+    "gender" : "male", 
+    "contact" : {
+        "phone" : "972-462-1121", 
+        "state" : "TX", 
+        "address1" : "PO Box 1561", 
+        "address2" : "", 
+        "email" : "moreinfo@coppellhumanesociety.com", 
+        "city" : "Coppell", 
+        "zip" : "75019"
+    }, 
+    "sentmessage" : [
+
+    ], 
+    "receivemessage" : [
+
+    ], 
+    "bookmarklist" : [
+
+    ], 
+    "petlist" : [
+
+    ]
+}
+{ 
+    "_id" : ObjectId("5ad50f7446c2a8597e48dd3d"), 
+    "email" : "e@e.com", 
+    "password" : "$2y$10$/0510IR2OYI7Sk2LY8wla.C5rkqQ46RcD6uSTp0XHRHVqwdf3/twO", 
+    "isowner" : false, 
+    "isadopter" : true, 
+    "lastname" : "crowley", 
+    "firstname" : "tom", 
+    "gender" : "female", 
+    "contact" : {
+        "phone" : "(907) 727-6728", 
+        "state" : "AK", 
+        "address1" : "2440 E. Tudor Road #105", 
+        "address2" : "", 
+        "email" : "rescueadogtoday@gmail.com", 
+        "city" : "Anchorage", 
+        "zip" : "99503"
+    }, 
+    "sentmessage" : [
+
+    ], 
+    "receivemessage" : [
+
+    ], 
+    "bookmarklist" : [
+
+    ], 
+    "petlist" : [
+
+    ]
+}
+{ 
+    "_id" : ObjectId("5ad51f7546c3a9597d48dd3e"), 
+    "email" : "f@f.com", 
+    "password" : "$2y$10$oH068rYIbDftkUI211xL4O99Eq5suIvXxzuc9KiWYLAr4iU4spwHG", 
+    "isowner" : true, 
+    "isadopter" : true, 
+    "lastname" : "crowley", 
+    "firstname" : "tom", 
+    "gender" : "female", 
+    "contact" : {
+        "phone" : "(907) 727-6728", 
+        "state" : "AK", 
+        "address1" : "2440 E. Tudor Road #105", 
+        "address2" : "", 
+        "email" : "rescueadogtoday@gmail.com", 
+        "city" : "Anchorage", 
+        "zip" : "99503"
+    }, 
+    "sentmessage" : [
+
+    ], 
+    "receivemessage" : [
+
+    ], 
+    "bookmarklist" : [
+
+    ], 
+    "petlist" : [
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd3f"), 
+            "name" : "Lily & Mia", 
+            "type" : "Dog", 
+            "primarybreed" : "Poodle", 
+            "sex" : "F", 
+            "age" : "Adult", 
+            "description" : "NOTE: This is a courtesy posting for another rescuer. Please do not contact ARRF, as we do not know this pet personally. See contact information below.\n\nMia is six and Lily is four. Mia looks more Maltese and Lily appears to have more Poodle in her. They are a bonded pair who must be adopted together. They were among the 44 dogs confiscated from a puppy mill in Southeast San Diego. They were in a windowless enclosure with no room to move around. They had ear mites and were covered with mange. We treated them and got them spayed.Their personalities are coming out as they become more secure in their foster home. Mia and Lily are very sweet girls but you have to start slow with them as they are fearful of new situations. Otherwise they are great with other dogs. They are both crate trained and are telling their foster mom when they need to go outside to go potty but they will need additional work with potty training.\n\nWe suggest a home with children over the age of 10 for this dog. This dog cannot be adopted out of state. Please see our home page for a list of our Saturday adoption sites. Every potential adopter is required to fill out an adoption application and the dog is placed in the home that would be most suitable for the dog. We do not place our dogs in homes with unfenced swimming pools. Generally we don't release the dogs at the adoption site that day except on occasion to former adopters. If you are interested in adopting this pair, please email FCIAdoptions@aol.com or call 619-466-9137.", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/34355089/1/?bust=1454105563&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/34355089/1/?bust=1454105563&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/34355089/2/?bust=1454105564&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/34355089/2/?bust=1454105564&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/34355089/3/?bust=1454105564&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/34355089/3/?bust=1454105564&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-01T02:13:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd40"), 
+            "name" : "COLT", 
+            "type" : "Dog", 
+            "primarybreed" : "Chihuahua", 
+            "sex" : "M", 
+            "age" : "Young", 
+            "contact" : {
+                "phone" : "239-252-7387", 
+                "state" : "FL", 
+                "address1" : "7610 Davis Blvd", 
+                "address2" : "", 
+                "email" : "", 
+                "city" : "Naples", 
+                "zip" : "34104", 
+                "fax" : ""
+            }, 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41377280/1/?bust=1523433829&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41377280/1/?bust=1523433829&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-02T11:13:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd41"), 
+            "name" : "Bonnie", 
+            "type" : "Dog", 
+            "primarybreed" : "Terrier", 
+            "sex" : "F", 
+            "age" : "Adult", 
+            "description" : "WEIGHT 69.4LBS NO CHIP MP", 
+            "contact" : {
+                "phone" : "(304) 425-2880", 
+                "state" : "WV", 
+                "address1" : "961 Shelter Rd", 
+                "address2" : "", 
+                "email" : "mcas@frontiernet.net", 
+                "city" : "Princeton", 
+                "zip" : "24740", 
+                "fax" : ""
+            }, 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/40932369/1/?bust=1523405625&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/40932369/1/?bust=1523405625&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-03T11:13:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd42"), 
+            "name" : "Azul", 
+            "type" : "Cat", 
+            "primarybreed" : "Domestic Long Hair", 
+            "sex" : "M", 
+            "age" : "Adult", 
+            "description" : "Hello, I'm Azul! I'm a sweet boy with a lot of love to give! I may be a little shy at first, but I'm very affectionate and will purr and roll over while you pet me! I love my sister Ruby so much that we need to go home together for double the fun and double the love! Come see me and my adoptable friends at AAWL's Sonia Breslow Adoption center! 25 North 40th Street Phoenix, AZ 85034 Questions about me? Contact our shelter at 602-273-6852 ext. 103. ", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41226205/1/?bust=1522389282&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41226205/1/?bust=1522389282&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41226205/2/?bust=1522389287&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41226205/2/?bust=1522389287&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41226205/3/?bust=1522389291&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41226205/3/?bust=1522389291&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-04T18:13:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd43"), 
+            "name" : "Fabio", 
+            "type" : "Dog", 
+            "primarybreed" : "Hound", 
+            "sex" : "M", 
+            "age" : "Adult", 
+            "description" : "Fabio gives true love and really wants a family to love him back!  He is a young adult, neutered and fully vetted.  Fabio is a fun active dog and would do well to hike or jog with along with you or just have a fenced yard and plenty of play time.   He knows basic commands and is eager to please when a treat is his reward.  The hound in him thinks it would be fun to chase cats so he would do best without a cat in his life.  Fabio most enjoys spending time with his people.    Fabio is so friendly and happy to meet new people that when we rescued him from death row he had \"happy tail\"; as we call it.  He wagged is tail so hard in his kennel that the tail became damaged from banging on the kennel walls.  It required a partial amputation.  The surgery left him a cute quarter length tail so he still has plenty of tail to wag when he someday meets his forever family.  He is dreaming of that day!\n\nFabio is spending time at our sanctuary playing with other dogs in play yards and snoozin' out in the sun. Interested in meeting Fabio? Please email ayendes.care@gmail.com for more information. \n\nAll C.A.R.E rescue dogs are fully vaccinated, heartworm tested, spayed/neutered, worm/flea free, and dogs are microchipped! So all you need to provide is the love.\n\nFill out an adoption application here: http://www.carerescue.org/caredogapplication\n\nOur adoption fee is a minimum $100 tax deductible donation. All donations are used for rescue and medical care of animals in need. If you don't have room to take home a pet but want to support our efforts to save animals in need, please consider making a donation. We are not city or state funded and rely solely on private donations that allow us to continue saving lives.\n\nTo learn more about us or to give a life saving donation please visit http://www.carerescue.org", 
+            "contact" : {
+                "phone" : "", 
+                "state" : "MO", 
+                "address1" : "1328 W. Sunshine Street", 
+                "address2" : "", 
+                "email" : "carerescue@yahoo.com", 
+                "city" : "Springfield", 
+                "zip" : "65807", 
+                "fax" : ""
+            }, 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/36778681/1/?bust=1479577825&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/36778681/1/?bust=1479577825&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/36778681/2/?bust=1481132228&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/36778681/2/?bust=1481132228&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/36778681/3/?bust=1499534016&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/36778681/3/?bust=1499534016&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-05T08:13:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd44"), 
+            "name" : "Nicholas", 
+            "type" : "Dog", 
+            "primarybreed" : "Collie", 
+            "sex" : "M", 
+            "age" : "Young", 
+            "description" : "Nicholas is a 8 mo old collie/hound mix who has the sweetest personality. Nicholas seems to love everything and everyone, crate trained, and working on house training. Nicholas has been neglected in the past and only weighs 20 lbs but he doesnâ\u0080\u0099t hold that against you, nothing but kisses when he greets you. Apply today at adoptastray.com.\n\nAll SAAP animals are vet checked, UTD on vaccines, spayed/neutered, micro chipped, and given flea and heartworm preventative as age appropriate.\n\nOur website is: http://www.adoptastray.com/\n\nTo check if this animal is still available visit our master pet list on our website at:\nhttp://www.adoptastray.com/adoptable-animals/\n\nHave questions:\nPlease email us at saap@adoptastray.com for more information about this animal or to answer any questions you may have. You may also contact us at (859)391-1234.\n\nCompleting the online application when you find an animal you are interested in speeds up the adoption process. We can hold your application on file for a period of time if you are still looking for that perfect new family member.\n\nTHE APPLICATION IS AVAILABLE AT THIS LINK:\nhttp://www.adoptastray.com/dog-adoption-application/\n\nINTERESTED IN FOSTERING:\nWe welcome your interest and ask that you complete our on-line foster application:\nhttp://www.adoptastray.com/foster-application/\n4/15/18 6:21 PM", 
+            "contact" : {
+                "phone" : "859-391-1234", 
+                "state" : "KY", 
+                "address1" : "P.O. Box 72040", 
+                "address2" : "", 
+                "email" : "SAAP@adoptastray.com", 
+                "city" : "Newport", 
+                "zip" : "41072", 
+                "fax" : ""
+            }, 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41390484/1/?bust=1523766460&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41390484/1/?bust=1523766460&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41390484/2/?bust=1523766462&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41390484/2/?bust=1523766462&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-01-01T09:13:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd45"), 
+            "name" : "Taffy", 
+            "type" : "Dog", 
+            "primarybreed" : "Boxer", 
+            "sex" : "F", 
+            "age" : "Baby", 
+            "description" : "Hi, my name is Taffy! My sister, Tizzy, and I were abandoned in a field on a rural, country road.  How rude is that?  Luckily for us a nice lady found us and hooked us up with CPR so we could find our forever homes.  My favorite game is hide & seek.  I also enjoy a good game of keep away with my toys!  I look forward to checking out the dog park and other exciting activities as I get older.  I canâ\u0080\u0099t wait to try my first hike or go camping!  I promise to give you many years of unconditional love & companionship!  Apply to adopt me today at www.cprdogs.com!\n\nThis puppy is spayed/neutered, up to date on age appropriate vaccinations and current on flea/tick and heartworm preventative.  \n\nThe adoption fee is $450 if your adoption is prepaid prior to your pup's arrival. An additional $50 will be charged on puppies that are picked up from our Southbury CT adoption center, adopted at an event or foster home. This additional fee is necessary in order to comply with CT HB 5368.\nIf you are a MA resident, your new family member is required to go through a mandatory 48 hour quarantine period at the Woburn MA isolation facility. Your new family member will be dropped off by our transport on Thursday and will be ready for you to pick him/her up on Saturday between noon and 2pm. An additional $100 fee will be added for any dogs picked up from the Woburn MA quarantine facility. This additional fee is necessary in order to comply with MA Order 405-CD-12 and Order 1-AHO-05.  \n\nTO APPLY PLEASE GO TO www.cprdogs.com. If your application was successfully submitted you will get a confirmation.\n\nAfter receipt of your application an adoption counselor will then be in touch to answer your questions about this pup, discuss the adoption process and get the ball rolling! If you have not heard from one of our volunteers within 5 days of submitting your application, please email mollibo@gmail.com.", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41252136/1/?bust=1521917492&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41252136/1/?bust=1521917492&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41252136/2/?bust=1521917496&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41252136/2/?bust=1521917496&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41252136/3/?bust=1521917498&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41252136/3/?bust=1521917498&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41252136/4/?bust=1521917503&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41252136/4/?bust=1521917503&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-01-23T10:13:19.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd46"), 
+            "name" : "Donathan", 
+            "type" : "Cat", 
+            "primarybreed" : "Persian", 
+            "sex" : "M", 
+            "age" : "Young", 
+            "description" : "Meet Donathan!  He is Brevardâ\u0080\u0099s very own â\u0080\u009cgrumpy catâ\u0080\u009d.  Though he has a sour look on his face, he is actually quite friendly and personable.  He is a one year old male cat who has always lived indoors, and is used to being spoiled.  His owner can no longer take care of him.   Maybe becoming a member of your family would put a smile on Donathanâ\u0080\u0099s face again!\n\n", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41193859/1/?bust=1521216499&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41193859/1/?bust=1521216499&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41193859/2/?bust=1521216519&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41193859/2/?bust=1521216519&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41193859/3/?bust=1521216535&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41193859/3/?bust=1521216535&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-02-23T10:13:09.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd47"), 
+            "name" : "STAR", 
+            "type" : "Dog", 
+            "primarybreed" : "Labrador Retriever", 
+            "sex" : "F", 
+            "age" : "Young", 
+            "contact" : {
+                "phone" : "404-613-0358  ", 
+                "state" : "GA", 
+                "address1" : "860 Marietta Blvd. NW", 
+                "address2" : "", 
+                "email" : "AC.Info@fultoncountyga.gov", 
+                "city" : "Atlanta", 
+                "zip" : "30318", 
+                "fax" : ""
+            }, 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/40618821/1/?bust=1515509647&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/40618821/1/?bust=1515509647&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-04-23T09:12:09.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd48"), 
+            "name" : "brandon", 
+            "type" : "Dog", 
+            "primarybreed" : "Mastiff", 
+            "sex" : "M", 
+            "age" : "Adult", 
+            "description" : "18 mo old.  good with older kids-he can knock small kids down in his playfullness.  loves people.  call 435 828-2299 or email timdar@ubtanet.com for more info", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41207790/1/?bust=1521394905&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41207790/1/?bust=1521394905&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41207790/2/?bust=1521394912&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41207790/2/?bust=1521394912&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41207790/3/?bust=1521394912&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41207790/3/?bust=1521394912&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-14T06:12:09.597Z"
+        }
+    ]
+}
+{ 
+    "_id" : ObjectId("5ad50f7546c2a9597d48dd49"), 
+    "email" : "g@g.com", 
+    "password" : "$2y$10$Ecy7i0NcUuQXP5dvYRShC.92V8/V1cirMCFSBB3h/ARM.9s6a1PzW", 
+    "isowner" : true, 
+    "isadopter" : true, 
+    "lastname" : "tim", 
+    "firstname" : "windman", 
+    "gender" : "male", 
+    "contact" : {
+        "phone" : "", 
+        "state" : "TX", 
+        "address1" : "448 West 15th Street", 
+        "address2" : "Box 553", 
+        "email" : "chowmail.hccc@gmail.com", 
+        "city" : "Houston", 
+        "zip" : "77008"
+    }, 
+    "sentmessage" : [
+
+    ], 
+    "receivemessage" : [
+
+    ], 
+    "bookmarklist" : [
+
+    ], 
+    "petlist" : [
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd4b"), 
+            "name" : "Harry", 
+            "type" : "Dog", 
+            "primarybreed" : "Australian Shepherd", 
+            "sex" : "M", 
+            "age" : "Baby", 
+            "description" : "I am 6 weeks old, love other dogs & all people!\n\nMy siblings are Hermione, Ron, and Ginny!\n\nI will be available for adoption on April 28th. I cannot have any visitors beforeÂ April 28th. You will need to fill out an online application and receive a phone call back from a staff member that everything is ok with the application prior toÂ April 28th. All family members and any dogs from the household need to be present at the time of the adoption.\n\nAdoption donation: $450\n\nWe open at 9 am Saturday mornings and we will be helping adoptions in the order of when they submitted an approved application to us. There will be a sign in sheet on the front door at 8:30 am so that we can pull applications for the people that arrive between 8:30-9am. Again, the order in which adoptions will come in to the shelter to see any adoptable dogs or cats first thing on Saturday mornings will be as to when the application was submitted to Animal House Shelter so there is no need to come to the shelter any earlier than 8:30 to sign in. This will be the procedure for people that arrive between 8:30-9am.\n\nAfter 9am, on Saturday mornings it will be first come, first serve after we help all of the adoptions that signed in between 8:30-9am. Most people submit general applications to us which do not specify a name or a particular litter they are interested in so there is no way for us to know until people arrive Saturday morning at 8:30 how many people are interested in a particular litter, puppy, kitten, cat or adult dog. We always have around 300 dogs & cats available for adoption and the adoption counselors will help you to find the right companion for your family! We look forward to meeting you!\n\nAll dogs are microchipped, neutered, current on all vaccines, heartworm tested and started on Tri Heart Plus & Vectra 3D.\n\nAdoptable Dogs:  http://www.animalhouseshelter.com/?page_id=343\n\n  The website www.animalhouseshelter.com is always kept 100% up to date with who is currently available and all new animals (40/week) are added to the site 2 weeks before their availability date to give you time to fill out your adoption application and get the family ready to come out to the shelter that day. So keep any eye on the site for any animals being added as available for adoption as new animals are added everyday!\nI would recommend if you havenâ\u0080\u0099t done so already that you submit a general online adoption application with us so it is on file for when you are ready to come out and adopt.  The adoption counselors will be able to show you many  that would be a good fit for your family.  We do go in order of when you submitted your application with us.  So it is always best that you get your general application for any animal in with us as soon as possible.\nHere is the link to the Adoption Application: https://www.animalhouseshelter.com/adoption-application/\n \nThank you!\nAnimal House Shelter\n13005 Ernesti Road\nHuntley IL, 60142\nwww.animalhouseshelter.com\nOpen \nSunday, Monday, Wednesday, Thursday and Friday from 11 AM to 7 PM, \nTuesday from 11 am to 4 pm and \nSaturday's 9 AM to 7 PM. \n847-961-5541\n847-961-5537 fax\n\nConnect With Us:\n\"Like\" Us On Facebook!\nWatch Us On YouTube!\nFollow Us On Twitter! \n\nAdoption Application:  http://www.animalhouseshelter.com/index.php?page_id=287\n\nHow to Adopt: http://www.animalhouseshelter.com/?page_id=31\n\nDirections to Shelter:  http://www.animalhouseshelter.com/?page_id=31\n\nAdoptable Dogs:  http://www.animalhouseshelter.com/?page_id=343", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41396538/1/?bust=1523632732&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41396538/1/?bust=1523632732&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41396538/2/?bust=1523632734&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41396538/2/?bust=1523632734&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41396538/3/?bust=1523632736&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41396538/3/?bust=1523632736&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41396538/4/?bust=1523632738&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41396538/4/?bust=1523632738&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41396538/5/?bust=1523632739&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41396538/5/?bust=1523632739&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41396538/6/?bust=1523632741&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41396538/6/?bust=1523632741&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-01T02:13:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd4c"), 
+            "name" : "Max", 
+            "type" : "Cat", 
+            "primarybreed" : "Domestic Short Hair", 
+            "sex" : "M", 
+            "age" : "Adult", 
+            "description" : "Max is a very sweet neutered male and he has a microchip. He has been here for almost two months and has now gotten accustomed to hearing barking dogs and doesn't have as much fear of them as he used to. He doesn't mind other cats being around and he is very affectionate and loves to purr. If you are looking for the perfect laid back loving cat, look no further, Max is your man. If you are interested in adopting Max please give us a call at 252-444-2712 or stop by and see us. We are open 7 days a week from 8am to 5pm.", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/39845172/1/?bust=1510019979&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/39845172/1/?bust=1510019979&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/39845172/2/?bust=1510019992&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/39845172/2/?bust=1510019992&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/39845172/3/?bust=1514751647&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/39845172/3/?bust=1514751647&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/39845172/4/?bust=1514751647&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/39845172/4/?bust=1514751647&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/39845172/5/?bust=1514751648&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/39845172/5/?bust=1514751648&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-04-01T03:33:18.347Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd4d"), 
+            "name" : "ROBERT", 
+            "type" : "Dog", 
+            "primarybreed" : "Doberman Pinscher", 
+            "sex" : "M", 
+            "age" : "Adult", 
+            "description" : "A pre adoption application must be completed for any pets you are interested in adopting. Pre adoption applications can be found at www.florencehumanesociety.org or at our shelter. Fax applications to 843-629-5457 or email wwilton@cityofflorence.com \nAll cats are $65 and all dogs are $85.", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41130118/1/?bust=1523820434&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41130118/1/?bust=1523820434&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-13T12:33:18.347Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd4e"), 
+            "name" : "Patrick", 
+            "type" : "Dog", 
+            "primarybreed" : "English Bulldog", 
+            "sex" : "M", 
+            "age" : "Baby", 
+            "description" : "Patrick is about 6 month old and was rescued from a kill shelter along with her brother on their last day. He is very playful and super sweet. He is crate trained and working on basic obedience. Patrick is deaf but thatâ\u0080\u0099s doesnâ\u0080\u0099t slow him down at all.He will need a patient home with the time and patient to work on more obedience.", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/39788089/1/?bust=1509411794&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/39788089/1/?bust=1509411794&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/39788089/2/?bust=1509411799&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/39788089/2/?bust=1509411799&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/39788089/3/?bust=1515704459&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/39788089/3/?bust=1515704459&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/39788089/4/?bust=1515704460&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/39788089/4/?bust=1515704460&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/39788089/5/?bust=1509411805&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/39788089/5/?bust=1509411805&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-13T01:33:18.347Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd4f"), 
+            "name" : "Abby & Lilly - URGENT", 
+            "type" : "Dog", 
+            "primarybreed" : "Great Pyrenees", 
+            "sex" : "F", 
+            "age" : "Senior", 
+            "description" : "Meet Abby & Lilly,\n\nThese sweet siblings were adopted to the same furever home when they were puppies.  Abby and Lilly had a wonderful home for years until their owner passed away unexpectely.  Lucky for them, their ownerâ\u0080\u0099s elderly father moved into their home to take care of them.  Now years laters their owner is in Hospice care so now Abby and Lily need a new furever home.\n\nAbby and Lilly are friendly pup about 10 years old.  They are docile, easy going and layed back.  They love nothing more than playing in the yard, going for walks and hanging out with you.\n\nThere is a lot to be said about an older dog, they have outgrown the urge to chew on things, they are not as rowdy as puppies and they appreciate just hanging out and keeping you company.\n\nAbby and Lilly would make wonderful loyal, low energy walking buddies for a nice family.  We are sure when you meet them, you will fall in love!\np>Â \nTHE BREED THIS PET IS LISTED AS IS OUR BEST GUESS AS WE HAVE NO BACKGROUND INFO ON WHO THE MOM OR DAD ARE. We do not have a shelter facility you can visit.  Our volunteers foster the dogs and pups in their private homes once they have been vetted and transported here. Please read our homepage to see how the adoption process works. If interested in adopting this pet, please e-mail FureverHomeDogRescue@gmail.com and request an adoption application. Please note we do not adopt puppies/dogs to homes where they will be alone all day. ", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41293802/1/?bust=1522424901&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41293802/1/?bust=1522424901&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41293802/2/?bust=1522424907&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41293802/2/?bust=1522424907&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41293802/3/?bust=1522424910&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41293802/3/?bust=1522424910&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41293802/4/?bust=1522424916&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41293802/4/?bust=1522424916&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41293802/5/?bust=1522424921&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41293802/5/?bust=1522424921&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41293802/6/?bust=1522424930&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41293802/6/?bust=1522424930&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-04T01:33:18.347Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd50"), 
+            "name" : "PANDA", 
+            "type" : "Dog", 
+            "primarybreed" : "Border Collie", 
+            "sex" : "F", 
+            "age" : "Adult", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41353921/1/?bust=1523169601&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41353921/1/?bust=1523169601&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-02-04T12:23:48.347Z"
+        }
+    ]
+}
+{ 
+    "_id" : ObjectId("5ad50f7546c2a9597d48dd51"), 
+    "email" : "h@h.com", 
+    "password" : "$2y$10$.im77Ube091GJrkK8whkT.ouEPRibr.rfXPlt.uS4al2yYHiQKboq", 
+    "isowner" : true, 
+    "isadopter" : false, 
+    "lastname" : "dino", 
+    "firstname" : "vodka", 
+    "gender" : "female", 
+    "contact" : {
+        "phone" : "209 742-4294", 
+        "state" : "CA", 
+        "address1" : "PO Box 3496", 
+        "address2" : "", 
+        "email" : "kellen@sti.net", 
+        "city" : "Oakhurst", 
+        "zip" : "93644"
+    }, 
+    "sentmessage" : [
+
+    ], 
+    "receivemessage" : [
+
+    ], 
+    "bookmarklist" : [
+
+    ], 
+    "petlist" : [
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd52"), 
+            "name" : "DUKE - A gentle giant", 
+            "type" : "Dog", 
+            "primarybreed" : "Boxer", 
+            "sex" : "M", 
+            "age" : "Young", 
+            "description" : "Go to www.\nARKsaves.com to read the complete animal bio\n\nEMOTIONAL SUPPORT ANIMAL8 FREE GROUP DOG TRAINING SESSIONS WITH OUR DOG WHISPERER/TRAINER in Orange City FL\nVisit Jose working with ARK dogs: https://youtu.be/cVj2W2X0z9w; Jose's group lesson video: https://youtu.be/Sr844IQmGls\nAdopt fee includes sterilization, heartworm test, microchip, shots, dewormimg.\nADOPT FEE - FULLY VETTED: $ 55\nMy Story: My dad just died and you can imagine how I feel. We were tied to each other and did everything together. I'm with a kind man now and his beautiful little girl. Please look at the photo of me with her and her little dog - it proves how very gentle I am.\nI'm 5 and weight about 65 pounds, am well mannered, healthy, and truly enjoy being a couch potato.\nMy Location: Contact Diane Sykes at diane_sykes@live.com to arrange a meeting with me. I'm in the Crescent City area.\n\nBark, Bark - Come and get me please!\nEmotional Support Animals (ESA)\nEmotional Support Animals are not required to undergo specialized training. They can be dogs, cats, exotics, birds. Their primary role is to provide their owners with emotional comfort. Emotional support animals can benefit a disabled individual psychologically. The basic gift of companionship and unconditional affection can be the therapy needed to counter a condition like debilitating depression or Post Traumatic Stress Disorder.\nESAs are protected under the Fair Housing Amendments Act (FHAA) and the Air Carrier Access Act (ACAA). People meeting the proper criteria are entitled to an ESA to assist them with life. The FHAA protects individuals by allowing ESAs to live with them regardless of breed (even with no pet policies). The ACAA protects individuals by allowing ESAs to fly with them in the cabin of an airplane without having to pay additional fees. ESAs are not required to be professionally trained. An owner can train the pet. A letter of need written by a mental health counselor may be required for those wanting to transport via plane or for landlords. For information regarding the legalities of ESA contact maggihall14@gmail.com.\n\nIf you can't find what you want at ARK go to the following and TRULY save a life. They still kill though trying to go NO KILL. Help them achieve that goal!\n\nSo\n\nutheast Volusia Humane Society\n\n- 1200 S Glencoe Rd (mile east of I-95), New Smyrna; 386.428.9860; sevhumanesociety@gmail.com;\n\nMonâ\u0080\u0093Sat 10- 5; Sun 10-2\n\nHalifax Humane Society - 2364 LPGA @ I-4, Daytona; 386.274.4703; www.halifaxhumanesociety.org;\nMonâ\u0080\u0093Sat 10â\u0080\u00936; Sun 10-2\n\nPutnam County Animal Control\nâ\u0080\u0093 523 Reid St, Palatka; 386.329.0396;\nputpets.com\n(donâ\u0080\u0099t put www); Monâ\u0080\u0093Thur 10â\u0080\u00934; Fri 10â\u0080\u009312; Sat 9-3\n\n1/31/18 8:12 AM", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/40687396/1/?bust=1516144401&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/40687396/1/?bust=1516144401&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/40687396/2/?bust=1516144401&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/40687396/2/?bust=1516144401&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/40687396/3/?bust=1517436125&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/40687396/3/?bust=1517436125&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-02-15T03:03:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd53"), 
+            "name" : "Scout", 
+            "type" : "Dog", 
+            "primarybreed" : "German Shepherd Dog", 
+            "sex" : "M", 
+            "age" : "Adult", 
+            "description" : "Say hello to Scout! Scout is a fun loving guy who is looking for a friend to explore with! Scout would love to be in an active home where he has a buddy to run with or a fenced in yard to play in. This smart boy knows lots of tricks and loves learning new ones! Scout is unsure about meeting new people but once you are his friend you have a friend for life! He has made many dog friends and loves playing outside with them, he might even enjoy having a canine sibling in his new home! Scout is looking for a confident owner who will show him the ropes. More than anything he is hoping to find a home that will give him all the love and attention he deserves. Call to meet Scout today!Our Adoption Hotline, 847-728-5434 option 2, is open Monday-Friday, 10am-5pm and we are happy to assist you with any questions!To apply to adopt a pet from Wright-Way Rescue, please fill out an online application at www.wright-wayrescue.org. Once approved, you may place a reservation to meet the pet you see above. Please place a reservation only if you are seriously considering adding this pet to your home.Wright-Way Rescue has two locations, the North Shore Humane Center and the Admission and Medical Services Campus. Please pay close attention to the location of the pet, which is listed above. All pets travel to the North Shore Humane Center in Morton Grove once they are ready for adoption. Please call the Adoption Hotline to find out more about a pet's location and availability date. Animals can also be adopted from our Admission and Medical Services Campus in Murphysboro, IL. Reservations for the Murphysboro location can be made by calling 618-208-1509.If you would like to look more casually at our adoptable animals, please stop by Wright-Way Rescue's North Shore Humane Center located at 5915 Lincoln Avenue in Morton Grove, IL. Our hours of operation are Thursday 2pm-8pm, Friday 12pm-8pm, and Saturday/Sunday 11am-4pm. We are closed Monday-Wednesday.All Wright-Way Rescue animals come up-to-date on medical care. The adoption fee includes: current vaccinations including Canine Influenza, initial deworming medication, microchip and registration, a veterinary check with health certificate, and a 30 day free trial of pet health insurance.Thank you for considering adoption from Wright-Way Rescue! We are a 501(c)(3) non profit, no-kill organization. Wright-Way Rescue places more dogs in adoptive homes than any other rescue in the State of Illinois on just 10% of the budget. We look forwarding to assisting your call on our Adoption Hotline, 847-728-5434,option 2. 4/13/18 5:31 PM", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41209243/1/?bust=1521440308&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41209243/1/?bust=1521440308&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41209243/2/?bust=1521440426&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41209243/2/?bust=1521440426&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41209243/3/?bust=1521440510&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41209243/3/?bust=1521440510&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-02-25T05:25:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd54"), 
+            "name" : "Fancy", 
+            "type" : "Dog", 
+            "primarybreed" : "Beagle", 
+            "sex" : "F", 
+            "age" : "Adult", 
+            "contact" : {
+                "phone" : "601-798-8000", 
+                "state" : "MS", 
+                "address1" : "1700 Palestine Road", 
+                "address2" : "", 
+                "email" : "prcspca@prcspca.org", 
+                "city" : "Picayune", 
+                "zip" : "39466", 
+                "fax" : ""
+            }, 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/41334592/1/?bust=1523018256&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41334592/1/?bust=1523018256&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41334592/2/?bust=1523018260&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41334592/2/?bust=1523018260&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/41334592/3/?bust=1523018262&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/41334592/3/?bust=1523018262&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-25T07:35:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd55"), 
+            "name" : "Gracie", 
+            "type" : "Dog", 
+            "primarybreed" : "Greyhound", 
+            "sex" : "F", 
+            "age" : "Adult", 
+            "description" : "Gracie makes us smile all the time. She is a super sweet, happy, loving girl and she is just beautiful to watch at play or curled up at rest. This sweet girl is just dying for affection and a family to love. Gracie loves giving kisses, playing chase with you and just knowing that you are there for her. Left behind when her beloved family moved away and could not to take her, Gracie hopes to find that true forever home this time. She is such a good girl, she is house trained, crate trained and would make a great addition to almost any home so call us today to meet her.", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/26416835/1/?bust=1371421591&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/26416835/1/?bust=1371421591&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/26416835/2/?bust=1431538463&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/26416835/2/?bust=1431538463&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/26416835/3/?bust=1390506585&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/26416835/3/?bust=1390506585&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/26416835/4/?bust=1498331303&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/26416835/4/?bust=1498331303&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/26416835/5/?bust=1498331303&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/26416835/5/?bust=1498331303&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-03-20T15:34:18.597Z"
+        }, 
+        {
+            "_id" : ObjectId("5ad50f7546c2a9597d48dd56"), 
+            "name" : "Jamboree", 
+            "type" : "Dog", 
+            "primarybreed" : "Border Collie", 
+            "sex" : "M", 
+            "age" : "Young", 
+            "description" : "What a pleasure to meet you!  I love meeting new people, new dogs, and new cats!  May I introduce myself?  My name is Jamboree and I'm four years old.  I'm not sure you can tell from my photos and you might be too polite to ask but I'm on the smaller side of average for a genteel Lab mix.  More about me?  My early days are a mystery that left me very occasionally skittish but the vast majority of my time is spent enjoying life.  I'm so good with other dogs.  I enjoy playing and hanging out and generally forging good relationships with all sorts of other dogs.  I'd love to have a canine friend in my new home.  Cats?  I am very good with kitties and I treat them with the utmost respect.  Besides playing with other dogs, admiring cats, and getting attention from people, my great pleasures include riding in the car and going on walks.  As you might imagine, I am an excellent companion in the car and do not display any of those shenanigans you sometimes see in unruly adolescents.  No, I am a lady and I conduct myself accordingly, both in the car and in the house.  I'm sure you realize you don't need to ask but I will confirm for you that I'm completely house trained and I use the doggie door like a pro.  No problem barking from me.  I am crate trained and enjoy napping in my crate but I am completely dependable in the house, too.  I can't remember the last time the door to my crate was closed.  If you are a dog lover who understands that sometimes a girl's past means she finds herself unsure once in a while, we should make a date to get together.  I can't wait to meet you!\n\n\nWe require an application, phone interview and home visit prior to adoption. We will not discuss a specific dog with an applicant until the adoption process is completed. Our adoption fee for dogs under 8 months is $300, dogs between 9 months and 7 years is $250 and our super seniors are $125. Please visit our website for more information. Thank you!", 
+            "imagelink" : [
+                "http://photos.petfinder.com/photos/pets/29870299/1/?bust=1483202189&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/29870299/1/?bust=1483202189&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/29870299/2/?bust=1483202190&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/29870299/2/?bust=1483202190&width=300&-pn.jpg", 
+                "http://photos.petfinder.com/photos/pets/29870299/3/?bust=1483202190&width=500&-x.jpg", 
+                "http://photos.petfinder.com/photos/pets/29870299/3/?bust=1483202190&width=300&-pn.jpg"
+            ], 
+            "posttime" : "2018-02-01T14:34:18.597Z"
+        }
+    ]
+}

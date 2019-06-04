@@ -1,0 +1,105 @@
+<div class="row">
+  <div style=" width: 100%; height: 500px; overflow: auto">
+    <h1>Received Message</h1>
+    <hr>
+    <div *ngIf="receivedMsgList.length > 0">
+      <div class="col-md-20 msg-header">
+        <span class="col-xs-6" style="color: black">Message Content</span>
+        <span class="col-xs-3" style="color: black">Send From</span>
+        <span class="col-xs-3" style="color: black">Post Time</span>
+      </div>
+
+      <div class="col-md-20" *ngFor="let msg of receivedMsgList">
+        <a (click)="viewMessage(msg,viewMessageModal)">
+          <span class="col-xs-6" style="color: black">{{ msg.messagecontent.substring(0, 50) }}</span>
+          <span class="col-xs-3" style="color: black">{{ msg.userfrom }}</span>
+          <span class="col-xs-3" style="color: black">{{ msg.posttime }}</span>
+        </a>
+      </div>
+      <hr>
+    </div>
+    <div *ngIf="receivedMsgList.length == 0">
+      You haven't received any message.
+    </div>
+  </div>
+
+
+  <div style="margin-top: 50px; width: 100%; height: 500px; overflow: auto">
+    <h1>Sent Message</h1>
+    <hr>
+    <div *ngIf="sentMsgList.length > 0">
+      <div class="col-md-20 msg-header">
+        <span class="col-xs-6" style="color: black">Message Content</span>
+        <span class="col-xs-3" style="color: black">Send To</span>
+        <span class="col-xs-3" style="color: black">Post Time</span>
+      </div>
+
+      <div class="col-md-20" *ngFor="let msg of sentMsgList">
+        <a [routerLink]="['/message-list/message']" (click)="viewMessage(msg,viewMessageModal)">
+          <span class="col-xs-6" style="color: black">{{ msg.messagecontent.substring(0, 50)  }}</span>
+          <span class="col-xs-3" style="color: black">{{ msg.userto }}</span>
+          <span class="col-xs-3" style="color: black">{{ msg.posttime }}</span>
+        </a>
+      </div>
+      <hr>
+    </div>
+    <div *ngIf="sentMsgList.length == 0">
+      You haven't sent any message.
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--********************** Add Message Modal *********************************-->
+<div class="row">
+  <modal #viewMessageModal>
+    <modal-header>
+      <h1>Check Message</h1>
+    </modal-header>
+    <modal-content class="row">
+      <form ngForm #viewMessageForm="ngForm" (ngSubmit)="onSubmit(viewMessageModal,viewMessageForm)">
+        <div class="form-group">
+          <label class="control-label">From: </label>
+          <p class="text-content2" name="userfrom" ngModel name="userfrom" #userfrom="ngModel">{{ msg.userfrom }}</p>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">To: </label>
+          <p class="text-content2" name="userto" ngModel name="userto" #userto="ngModel">{{ msg.userto }}</p>
+        </div>
+
+        <div class="form-group input-group" style="width: 100%">
+          <label class="control-label">Message Content</label>
+          <div class="form-control" style="height: 100px; overflow: auto">{{ msg.messagecontent }}</div>
+        </div>
+
+        <div class="form-group input-group" style="width: 100%">
+          <label class="control-label">Message Reply</label>
+          <textarea class="form-control" name="reply"
+                    placeholder="Reply to ... " ngModel name="reply"
+                    #reply="ngModel" style="height: 100px">Enter text here...</textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-default">Submit</button>
+          <button class="btn btn-default" (click)="viewMessageModal.close()">Cancel</button>
+        </div>
+
+      </form>
+    </modal-content>
+    <modal-footer>
+    </modal-footer>
+  </modal>
+</div>
+

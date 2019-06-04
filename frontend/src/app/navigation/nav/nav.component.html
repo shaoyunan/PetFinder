@@ -1,0 +1,40 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" [routerLink]="['/homepage']">Home Page</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a [routerLink]="['/search']" (click)="searchChange('all')">Find Pet</a></li>
+      <!--<li><a [routerLink]="['/search?type=Dog']" (click)="searchChange('dog')">Find Dog</a></li>-->
+      <!--<li><a [routerLink]="['/searchtype=Cat']" (click)="searchChange('cat')">Find Cat</a></li>-->
+      <li><a [routerLink]="['/community']">Resource</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#" [routerLink]="['/user/login']" *ngIf="!isLoggedIn">Sign In/Register</a></li>
+
+      <div class="dropdown" *ngIf="isLoggedIn" >
+          <button class="btn btn-secondary dropdown-toggle" type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+              Hi, {{ email }}<span class="caret"></span> </button>
+          <ul class="dropdown-menu">
+              <li (click)="routeToProfile()">User Profile</li>
+              <li (click)="logoutUser()">Logout</li>
+            </ul>
+       
+        <!-- <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 200px; background: white;"> -->
+          <!-- <button class="dropdown-item" type="button" style="width: 200px; background: white;" (click)="routeToProfile()"><span style="color: black">User Profile</span></button>
+          <button class="dropdown-item" type="button" style="width: 200px; background: white;" (click)="logoutUser()"><span style="color: black">Logout</span></button> -->
+        <!-- </div> -->
+      </div>
+    </ul>
+  </div>
+</nav>
+
+<!-- <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"id="dropdownMenu2">Dropdown Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </div> -->
